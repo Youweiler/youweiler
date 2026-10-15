@@ -1,0 +1,26 @@
+[project]
+name = "youweiler"
+version = "1.0.0"
+description = "App Clinica Veterinaria YOUWEILER"
+dependencies = [
+    "flet",
+    "qrcode",
+    "Pillow"
+]
+
+[tool.flet]
+# Identificador único para iOS / Android
+org = "com.youweiler"
+author = "YOUWEILER"
+
+[tool.flet.app]
+path = "main.py"
+
+[tool.flet.ios]
+# Identificador de la aplicación en la App Store (Bundle Identifier)
+bundle_id = "com.youweiler.app"
+
+# Permisos requeridos por iOS para archivos y cámara
+[tool.flet.ios.info_plist]
+NSCameraUsageDescription = "YOUWEILER requiere acceso a la cámara para tomar fotos de las mascotas."
+NSPhotoLibraryUsageDescription = "YOUWEILER requiere acceso a la galería para seleccionar fotos de las mascotas."
