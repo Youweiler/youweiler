@@ -14,7 +14,8 @@ org = "com.youweiler"
 author = "YOUWEILER"
 
 [tool.flet.app]
-path = "main.py"
+product = "Youweiler"
+module = "main.py"
 
 [tool.flet.ios]
 # Identificador de la aplicación en la App Store (Bundle Identifier)
